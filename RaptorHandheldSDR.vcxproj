@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{711bbaf8-fc2c-4c10-984c-6617c5a93824}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>RaptorHandheldSDR</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>U:\lib\volk\build\include\volk;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>
+    </IncludePath>
+    <LibraryPath>
+    </LibraryPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="fast_atan2f.cpp" />
+    <ClCompile Include="iir_filter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RaptorControlLabelDrawable.cpp" />
+    <ClCompile Include="RaptorDecimatorBase.cpp" />
+    <ClCompile Include="RaptorDecimatorComplex.cpp" />
+    <ClCompile Include="RaptorDecimatorReal.cpp" />
+    <ClCompile Include="RaptorDisplay.cpp" />
+    <ClCompile Include="RaptorDrawable.cpp" />
+    <ClCompile Include="RaptorFileSource.cpp" />
+    <ClCompile Include="RaptorFirFilter.cpp" />
+    <ClCompile Include="RaptorFontRenderer.cpp" />
+    <ClCompile Include="RaptorFontStore.cpp" />
+    <ClCompile Include="RaptorGraphicsStore.cpp" />
+    <ClCompile Include="RaptorLayer.cpp" />
+    <ClCompile Include="RaptorMenuHelper.cpp" />
+    <ClCompile Include="RaptorMenuHorizDrawable.cpp" />
+    <ClCompile Include="RaptorPaddedButtonDrawable.cpp" />
+    <ClCompile Include="RaptorPll.cpp" />
+    <ClCompile Include="RaptorQuickBarDrawable.cpp" />
+    <ClCompile Include="RaptorRadio.cpp" />
+    <ClCompile Include="RaptorRdsBarDrawable.cpp" />
+    <ClCompile Include="RaptorRtlSdrSource.cpp" />
+    <ClCompile Include="RaptorSelectionDrawable.cpp" />
+    <ClCompile Include="RaptorSettingsMenuDrawable.cpp" />
+    <ClCompile Include="RaptorSpectrumController.cpp" />
+    <ClCompile Include="RaptorSpectrumDrawable.cpp" />
+    <ClCompile Include="RaptorStackedDrawable.cpp" />
+    <ClCompile Include="RaptorStackedHorizDrawable.cpp" />
+    <ClCompile Include="RaptorStackedVertDrawable.cpp" />
+    <ClCompile Include="RaptorSysIconBattery.cpp" />
+    <ClCompile Include="RaptorSysIconSignal.cpp" />
+    <ClCompile Include="RaptorSystemBarController.cpp" />
+    <ClCompile Include="RaptorSystemStatusBarDrawable.cpp" />
+    <ClCompile Include="RaptorTextButtonDrawable.cpp" />
+    <ClCompile Include="RaptorTunerDrawable.cpp" />
+    <ClCompile Include="RaptorWaterfallDrawable.cpp" />
+    <ClCompile Include="RaptorWbFmDemodulator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fast_atan2f.h" />
+    <ClInclude Include="iir_filter.h" />
+    <ClInclude Include="RaptorArbitraryResampler.h" />
+    <ClInclude Include="RaptorBandPassFilterBuilder.h" />
+    <ClInclude Include="RaptorCircularBuffer.h" />
+    <ClInclude Include="RaptorConstants.h" />
+    <ClInclude Include="RaptorControlLabelDrawable.h" />
+    <ClInclude Include="RaptorDecimatorBase.h" />
+    <ClInclude Include="RaptorDecimatorComplex.h" />
+    <ClInclude Include="RaptorDecimatorReal.h" />
+    <ClInclude Include="RaptorDisplay.h" />
+    <ClInclude Include="RaptorDrawable.h" />
+    <ClInclude Include="RaptorFileSource.h" />
+    <ClInclude Include="RaptorFilterBuilder.h" />
+    <ClInclude Include="RaptorFirFilter.h" />
+    <ClInclude Include="RaptorFirFilterReal.h" />
+    <ClInclude Include="RaptorFontRenderer.h" />
+    <ClInclude Include="RaptorFontStore.h" />
+    <ClInclude Include="RaptorGraphicsStore.h" />
+    <ClInclude Include="RaptorLayer.h" />
+    <ClInclude Include="RaptorLayoutMode.h" />
+    <ClInclude Include="RaptorLowPassFilterBuilder.h" />
+    <ClInclude Include="RaptorFirFilterComplex.h" />
+    <ClInclude Include="RaptorMenuHelper.h" />
+    <ClInclude Include="RaptorMenuHorizDrawable.h" />
+    <ClInclude Include="RaptorPaddedButtonDrawable.h" />
+    <ClInclude Include="RaptorPixel.h" />
+    <ClInclude Include="RaptorPll.h" />
+    <ClInclude Include="RaptorQuickBarDrawable.h" />
+    <ClInclude Include="RaptorRadio.h" />
+    <ClInclude Include="RaptorRadioDemodulator.h" />
+    <ClInclude Include="RaptorRadioSource.h" />
+    <ClInclude Include="RaptorRdsBarDrawable.h" />
+    <ClInclude Include="RaptorRtlSdrSource.h" />
+    <ClInclude Include="RaptorSelectionDrawable.h" />
+    <ClInclude Include="RaptorSettingsMenuDrawable.h" />
+    <ClInclude Include="RaptorSpectrumController.h" />
+    <ClInclude Include="RaptorSpectrumDrawable.h" />
+    <ClInclude Include="RaptorStackedDrawable.h" />
+    <ClInclude Include="RaptorStackedHorizDrawable.h" />
+    <ClInclude Include="RaptorStackedVertDrawable.h" />
+    <ClInclude Include="RaptorSysIconBattery.h" />
+    <ClInclude Include="RaptorSysIconSignal.h" />
+    <ClInclude Include="RaptorSystemBarController.h" />
+    <ClInclude Include="RaptorSystemBarIcon.h" />
+    <ClInclude Include="RaptorSystemStatusBarDrawable.h" />
+    <ClInclude Include="RaptorTextButtonDrawable.h" />
+    <ClInclude Include="RaptorTunerDrawable.h" />
+    <ClInclude Include="RaptorWaterfallColorTable.h" />
+    <ClInclude Include="RaptorWaterfallDrawable.h" />
+    <ClInclude Include="RaptorWavFileWriter.h" />
+    <ClInclude Include="RaptorWbFmDemodulator.h" />
+    <ClInclude Include="RaptorWindowBuilder.h" />
+    <ClInclude Include="raptor_font.h" />
+    <ClInclude Include="raptor_graphic.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <LibraryDependencies>volk;rtlsdr;pthread;resample;iir;fftw3</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <LibraryDependencies>volk;rtlsdr;pthread;resample;iir;fftw3</LibraryDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>RAPTOR_LOG;RAPTOR_DEBUG_OUTPUT_AUDIO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

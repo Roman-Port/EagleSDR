@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RaptorRadio.cpp">
+      <Filter>radio</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorRtlSdrSource.cpp">
+      <Filter>radio\source\rtlsdr</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorWbFmDemodulator.cpp">
+      <Filter>radio\demodulator\wbfm</Filter>
+    </ClCompile>
+    <ClCompile Include="fast_atan2f.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorFirFilter.cpp">
+      <Filter>radio\analog\filter</Filter>
+    </ClCompile>
+    <ClCompile Include="iir_filter.cpp">
+      <Filter>radio\analog\filter\iir</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorPll.cpp">
+      <Filter>radio\analog</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorFileSource.cpp">
+      <Filter>radio\source\file</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorDecimatorComplex.cpp">
+      <Filter>radio\analog\filter\decimator</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorDecimatorReal.cpp">
+      <Filter>radio\analog\filter\decimator</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorDecimatorBase.cpp">
+      <Filter>radio\analog\filter\decimator</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSpectrumController.cpp">
+      <Filter>radio\fft</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorDrawable.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorLayer.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorStackedDrawable.cpp">
+      <Filter>ui\drawables\primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorStackedHorizDrawable.cpp">
+      <Filter>ui\drawables\primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorStackedVertDrawable.cpp">
+      <Filter>ui\drawables\primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorDisplay.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSystemStatusBarDrawable.cpp">
+      <Filter>ui\drawables\system</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorQuickBarDrawable.cpp">
+      <Filter>ui\drawables\system</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorWaterfallDrawable.cpp">
+      <Filter>ui\drawables\spectrum</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSpectrumDrawable.cpp">
+      <Filter>ui\drawables\spectrum</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorMenuHelper.cpp">
+      <Filter>ui\drawables\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorMenuHorizDrawable.cpp">
+      <Filter>ui\drawables\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorPaddedButtonDrawable.cpp">
+      <Filter>ui\drawables\button</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorFontRenderer.cpp">
+      <Filter>ui\text</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorTextButtonDrawable.cpp">
+      <Filter>ui\drawables\button</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorFontStore.cpp">
+      <Filter>ui\text</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorRdsBarDrawable.cpp">
+      <Filter>ui\drawables\system</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorControlLabelDrawable.cpp">
+      <Filter>ui\drawables\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorTunerDrawable.cpp">
+      <Filter>ui\drawables\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSelectionDrawable.cpp">
+      <Filter>ui\drawables\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorGraphicsStore.cpp">
+      <Filter>ui\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSystemBarController.cpp">
+      <Filter>ui\sysbar</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSysIconBattery.cpp">
+      <Filter>ui\sysbar\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSysIconSignal.cpp">
+      <Filter>ui\sysbar\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="RaptorSettingsMenuDrawable.cpp">
+      <Filter>ui\drawables\menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="radio">
+      <UniqueIdentifier>{f2fe9995-4c9f-42a9-99e4-4a4345df0509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\source">
+      <UniqueIdentifier>{e5474900-eb0b-4ccf-9fd1-353a9da8b678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\source\rtlsdr">
+      <UniqueIdentifier>{1a295ada-60d6-4192-bf67-d43494c3354b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\io">
+      <UniqueIdentifier>{2facef15-1f5d-438e-a51d-5dc75c05fe9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\demodulator">
+      <UniqueIdentifier>{1af48fa6-e47a-46f2-b7d3-638ed0f1b9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\demodulator\wbfm">
+      <UniqueIdentifier>{9ec9d685-bdfb-42ec-9789-1437d2fa9f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog">
+      <UniqueIdentifier>{ecb53ae7-7212-462b-9ad9-c0eff821e898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog\filter">
+      <UniqueIdentifier>{cd01ebc9-d6d4-4d2a-9a4a-86c1dc9b61a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog\window">
+      <UniqueIdentifier>{7b81d9f4-9175-4221-b7f8-4616102104a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\source\file">
+      <UniqueIdentifier>{bbe92a0b-e267-402e-8bb6-c933af3bcc56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{afd72ce5-3f8e-4b55-8c9f-caf41b43635b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog\filter\fir">
+      <UniqueIdentifier>{7fdc083c-4e87-4896-b3e8-c07516db2b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog\filter\iir">
+      <UniqueIdentifier>{ed61fa3d-6be9-401d-858b-0b475ba9b350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog\filter\fir\builder">
+      <UniqueIdentifier>{52339d65-5894-471b-8f3c-5296c07ab675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\analog\filter\decimator">
+      <UniqueIdentifier>{2366aee9-5d74-4c88-9f22-0f215cbd1a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radio\fft">
+      <UniqueIdentifier>{dea4b188-4baa-4b37-9558-8e338da24a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{ad5f171d-6fad-45f7-97ac-fd4d350393ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables">
+      <UniqueIdentifier>{94bbea07-c3fd-4835-abbf-1abb9f4ddb37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables\primitive">
+      <UniqueIdentifier>{f8371527-85ca-4244-9226-79f6f6f26176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables\system">
+      <UniqueIdentifier>{a24fb637-9040-440f-a677-65516a007a63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables\spectrum">
+      <UniqueIdentifier>{8b108ef8-bc92-470f-b2af-0757d40d248b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables\menu">
+      <UniqueIdentifier>{47be4703-14bd-4f33-b4eb-17d5bd0d07b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables\button">
+      <UniqueIdentifier>{ea71b4b1-7487-4550-8d03-fe6669a84f65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\text">
+      <UniqueIdentifier>{ca9f87fd-299c-45af-badf-aecba5023830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\drawables\misc">
+      <UniqueIdentifier>{f79ad3de-0237-4c60-ae43-6a03afc29359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\graphics">
+      <UniqueIdentifier>{5f67eb12-9500-4b39-bd09-2ff32b86c741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\sysbar">
+      <UniqueIdentifier>{5f3956c3-293c-4d0c-811b-488c105b093d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\sysbar\icons">
+      <UniqueIdentifier>{63b0acc1-d9b3-4103-aa9b-66039123c1a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RaptorRadio.h">
+      <Filter>radio</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorRadioSource.h">
+      <Filter>radio\source</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorRtlSdrSource.h">
+      <Filter>radio\source\rtlsdr</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorCircularBuffer.h">
+      <Filter>radio\io</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorRadioDemodulator.h">
+      <Filter>radio\demodulator</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorWbFmDemodulator.h">
+      <Filter>radio\demodulator\wbfm</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorWindowBuilder.h">
+      <Filter>radio\analog\window</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorLowPassFilterBuilder.h">
+      <Filter>radio\analog\filter\fir\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFilterBuilder.h">
+      <Filter>radio\analog\filter\fir\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorPll.h">
+      <Filter>radio\analog</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorBandPassFilterBuilder.h">
+      <Filter>radio\analog\filter\fir\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFileSource.h">
+      <Filter>radio\source\file</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorArbitraryResampler.h">
+      <Filter>radio\analog</Filter>
+    </ClInclude>
+    <ClInclude Include="fast_atan2f.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorWavFileWriter.h">
+      <Filter>radio\io</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFirFilterComplex.h">
+      <Filter>radio\analog\filter\fir</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFirFilterReal.h">
+      <Filter>radio\analog\filter\fir</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFirFilter.h">
+      <Filter>radio\analog\filter</Filter>
+    </ClInclude>
+    <ClInclude Include="iir_filter.h">
+      <Filter>radio\analog\filter\iir</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorDecimatorComplex.h">
+      <Filter>radio\analog\filter\decimator</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorDecimatorReal.h">
+      <Filter>radio\analog\filter\decimator</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorDecimatorBase.h">
+      <Filter>radio\analog\filter\decimator</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSpectrumController.h">
+      <Filter>radio\fft</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorDrawable.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorPixel.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorLayer.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorConstants.h" />
+    <ClInclude Include="RaptorLayoutMode.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorStackedDrawable.h">
+      <Filter>ui\drawables\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorStackedHorizDrawable.h">
+      <Filter>ui\drawables\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorStackedVertDrawable.h">
+      <Filter>ui\drawables\primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorDisplay.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSystemStatusBarDrawable.h">
+      <Filter>ui\drawables\system</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorQuickBarDrawable.h">
+      <Filter>ui\drawables\system</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorWaterfallDrawable.h">
+      <Filter>ui\drawables\spectrum</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorWaterfallColorTable.h">
+      <Filter>ui\drawables\spectrum</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSpectrumDrawable.h">
+      <Filter>ui\drawables\spectrum</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorMenuHelper.h">
+      <Filter>ui\drawables\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorMenuHorizDrawable.h">
+      <Filter>ui\drawables\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorPaddedButtonDrawable.h">
+      <Filter>ui\drawables\button</Filter>
+    </ClInclude>
+    <ClInclude Include="raptor_font.h">
+      <Filter>ui\text</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFontStore.h">
+      <Filter>ui\text</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorFontRenderer.h">
+      <Filter>ui\text</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorTextButtonDrawable.h">
+      <Filter>ui\drawables\button</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorRdsBarDrawable.h">
+      <Filter>ui\drawables\system</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorControlLabelDrawable.h">
+      <Filter>ui\drawables\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorTunerDrawable.h">
+      <Filter>ui\drawables\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSelectionDrawable.h">
+      <Filter>ui\drawables\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorGraphicsStore.h">
+      <Filter>ui\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="raptor_graphic.h">
+      <Filter>ui\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSystemBarController.h">
+      <Filter>ui\sysbar</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSystemBarIcon.h">
+      <Filter>ui\sysbar</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSysIconBattery.h">
+      <Filter>ui\sysbar\icons</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSysIconSignal.h">
+      <Filter>ui\sysbar\icons</Filter>
+    </ClInclude>
+    <ClInclude Include="RaptorSettingsMenuDrawable.h">
+      <Filter>ui\drawables\menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
